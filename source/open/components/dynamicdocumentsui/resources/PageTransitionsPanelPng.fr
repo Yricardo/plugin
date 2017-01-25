@@ -1,0 +1,52 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/dynamicdocumentsui/resources/PageTransitionsPanelPng.fr $
+//  
+//  Owner: Yeming Liu
+//  
+//  $Author: devtecbj $
+//  
+//  $DateTime: 2014/03/11 10:35:53 $
+//  
+//  $Revision: #2 $
+//  
+//  $Change: 871398 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#include "IconPNGDefs.h"
+#include "DynamicDocumentsUIDefs.h"
+
+//	Basil PageTransitionsPanel UI
+
+resource PNGA(kPageTransitionsPaletteIconRsrcID) "SP_PL_PageTransition_N.png"
+resource PNGAD(kPageTransitionsPaletteIconRsrcID) "SP_PL_PageTransition_N_D.png"
+
+resource PNGA(kPageTransitionsIconRsrcID) "SP_ApplyToAllSpreads_Wi_N.png"
+resource PNGAD(kPageTransitionsIconRsrcID) "SP_ApplyToAllSpreads_Wi_N_D.png"
+
+// HiDPI
+resource PNGA(kPageTransitionsPaletteIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_PageTransition_N.png"
+resource PNGAD(kPageTransitionsPaletteIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_PageTransition_N_D.png"
+
+resource PNGA(kPageTransitionsIconRsrcID + kHIDPIIconOffset) "SP_x2_ApplyToAllSpreads_Wi_N.png"
+resource PNGAD(kPageTransitionsIconRsrcID + kHIDPIIconOffset) "SP_x2_ApplyToAllSpreads_Wi_N_D.png"
+
+#ifdef WINDOWS
+resource PNGA(kPageTransitionsPaletteIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_PageTransition_N.png"
+resource PNGAD(kPageTransitionsPaletteIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_PageTransition_N_D.png"
+
+resource PNGA(kPageTransitionsIconRsrcID + kHIDPIIconOffset150) "SP_x150_ApplyToAllSpreads_Wi_N.png"
+resource PNGAD(kPageTransitionsIconRsrcID + kHIDPIIconOffset150) "SP_x150_ApplyToAllSpreads_Wi_N_D.png"
+#endif
+
+#endif

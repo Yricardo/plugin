@@ -1,0 +1,169 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/dynamicdocumentsui/resources/SWFPreviewPanelViews_enUS.fr $
+//  
+//  Owner: Yeming Liu
+//  
+//  $Author: gmatthew $
+//  
+//  $DateTime: 2013/06/18 15:15:50 $
+//  
+//  $Revision: #1 $
+//  
+//  $Change: 853167 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#include "InterfaceColorDefines.h"
+#include "DynamicDocumentsUIDefs.h"
+#include "ApplDefs.h"
+
+#ifdef __ODFRC__
+
+
+//========================================================================================
+// SWFPreviewPanelView resource
+//========================================================================================
+
+resource SWFPreviewPanelWidget (kSWFPreviewPaletteRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kSWFPreviewPanelWidgetID, kPMRsrcID_None, // WidgetId, RsrcId
+	kBindNone,					// Frame binding
+	Frame(0,15,kMinSWFPreviewPanelWidth,kMinSWFPreviewPanelHeight)			// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	kTrue,						// EraseBeforeDraw
+	kInterfacePaletteFill,		// Erase to color
+	kFalse,						// DrawDropShadow
+	"kSWFPreviewPanelName",		// Panel name	
+	{	
+		// Preview Proxy
+		AnimationPreviewPanelWidget
+		(
+			0, kPMRsrcID_None,
+			kBindAll,
+			Frame(2,5,kMinSWFPreviewPanelWidth-2,120)		// Frame
+			kTrue, kTrue,
+			kTrue,											// EraseBackground
+			kInterfacePaletteFill,							// Erase to color
+			"",
+			{
+				// ----- Preview Proxy ----- 
+				SWFPreviewOWLFlashPlayerWidget 
+				(
+					kSWFPreviewProxyWidgetID, 
+					kPMRsrcID_None,
+					kBindAll,
+					Frame(0,0,kMinSWFPreviewPanelWidth-4,115)	// Frame
+					kTrue, kTrue,
+				)	
+			}
+		)		
+
+
+		// ----- The control strip ----- //
+		GenericPanelWidget
+		(
+			kSWFPreviewPanelControlStripWidgetID, kPMRsrcID_None,
+			kBindBottom | kBindLeft | kBindRight,
+			Frame(0,122,kMinSWFPreviewPanelWidth,140)  						// Frame
+			kTrue, kTrue,
+			""
+			{	
+				// Play Button
+				SWFPreviewButtonWidget
+				(
+					kSWFPreviewButtonWidgetID, kSWFPreviewPlayIconRsrcID, kDynamicDocumentsUIPluginID,	// WidgetId, RsrcId, PluginId				
+					kBindLeft,
+					Frame(0,0,20,kPanelIconHeight)					// Frame
+					kTrue, kTrue,						// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),	
+				// stop Button
+				SWFStopButtonWidget
+				(
+					kSWFStopButtonWidgetID, kSWFPreviewStopIconRsrcID, kDynamicDocumentsUIPluginID,	// WidgetId, RsrcId, PluginId				
+					kBindLeft,
+					Frame(20,0,40,kPanelIconHeight)					// Frame
+					kTrue, kFalse,						// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),	
+				// Go To Previous Page
+				PreviousSpreadButtonWidget
+				(
+					kSWFPreviewPreviousButtonWidgetID, kBackwardPageMinusIconRsrcID, kApplicationRsrcPluginID,	// WidgetId, RsrcId, PluginId	
+					kBindLeft,	// Frame binding
+					Frame(48,0,63,kPanelIconHeight)		// Frame
+					kTrue, kFalse,			// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+				// Current page static text widget
+				SWFPreviewCurrentPageWidget 
+                (             
+                    kSWFPreviewCurrentPageWidgetID, kSysStaticTextPMRsrcId,	// WidgetId, RsrcId
+					kBindLeft,
+					Frame(63,0,92,kPanelIconHeight)				// Frame
+					kTrue, kTrue, kAlignCenter,		// Visible, Enabled, alignment
+  					kEllipsizeEnd, kFalse,			// Ellipsize style, Convert ampersands
+  					"",								// Text
+  					0	                                       
+                ), 
+				// Go To Next Page
+				NextSpreadButtonWidget
+				(
+					kSWFPreviewNextButtonWidgetID, kForwardPagePlusIconRsrcID, kApplicationRsrcPluginID,	// WidgetId, RsrcId, PluginId	
+					kBindLeft,				// Frame binding
+					Frame(92,0,107,kPanelIconHeight)		// Frame
+					kTrue, kFalse,			// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+				// Warning icon
+				SWFPreviewWarningButtonWidget 
+                ( 
+                    kSWFPreviewWarningButtonWidgetID, kSWFPreviewWarningIconRsrcID, kDynamicDocumentsUIPluginID,	// WidgetId, RsrcId, PluginId	
+                    kBindRight,				// Frame binding
+                    Frame(111,0,130,kPanelIconHeight)			// Frame
+                    kFalse, kTrue, 
+                    kADBEIconSuiteButtonType, 
+                ),
+				// Preview Selection Button
+				RollOverIconPushButtonWidget
+				(
+					kSWFPreviewSelectionButtonWidgetID, kSWFPreviewSelectionIconRsrcID, kDynamicDocumentsUIPluginID,	// WidgetId, RsrcId, PluginId	
+					kBindRight,
+					Frame(132,0,152,kPanelIconHeight)					// Frame
+					kTrue, kTrue,						// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+				// Preview Spread Button
+				RollOverIconPushButtonWidget
+				(
+					kSWFPreviewSpreadButtonWidgetID, kSWFPreviewSpreadIconRsrcID, kDynamicDocumentsUIPluginID, // WidgetId, RsrcId, PluginId	
+					kBindRight,
+					Frame(152,0,172,kPanelIconHeight)					// Frame
+					kTrue, kTrue,						// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+				// Preview Document Button
+				RollOverIconPushButtonWidget
+				(
+					kSWFPreviewDocumentButtonWidgetID, kSWFPreviewDocumentIconRsrcID, kDynamicDocumentsUIPluginID, // WidgetId, RsrcId, PluginId	
+					kBindRight,
+					Frame(172,0,192,kPanelIconHeight)					// Frame
+					kTrue, kTrue,						// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+			}
+		),
+	},
+	"kSWFPreviewPanelPopup",				// Panel popup menu name
+}
+
+#endif

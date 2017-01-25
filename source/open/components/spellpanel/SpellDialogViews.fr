@@ -1,0 +1,117 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/spellpanel/SpellDialogViews.fr $
+//  
+//  Owner: Bernd Spelldies
+//  
+//  $Author: gmatthew $
+//  
+//  $DateTime: 2013/06/18 15:15:50 $
+//  
+//  $Revision: #1 $
+//  
+//  $Change: 853167 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#include "Widgets.fh"
+#include "SysControlIds.h"
+#include "LocaleIndex.h"
+#include "PMLocaleIds.h"
+#include "SpellPanelID.h"
+#include "TextPanelID.h"
+#include "IControlViewDefs.h"
+
+#include "IDList.fh"
+#include "IconStyleDefs.h"
+
+#include "Widgets.fh"
+#include "SysControlIds.h"
+#include "LocaleIndex.h"
+#include "PMLocaleIds.h"
+#include "SpellPanelID.h"
+#include "TextPanelID.h"
+#include "InterfaceColorDefines.h"
+
+
+#ifdef __ODFRC__
+
+//========================================================================================
+// TYPES
+//========================================================================================
+
+type SpellScopeWidget (kViewRsrcType) : DropDownListWidget (ClassID = kSpellScopeObserverBoss ) { };
+
+type SpellDialogWidget				(kViewRsrcType) : DialogBoss (ClassID = kSpellPanelDialogBoss)
+{
+	CControlViewObservers;
+};
+type SpellLanguageBoss			(kViewRsrcType) : StaticTextWidget(ClassID = kSpellLanguageBoss) { };
+
+type SpellServiceObserverBoss		(kViewRsrcType) : StaticTextWidget	(ClassID = kSpellServiceObserverBoss) { };
+
+type SpellChangeButtonWidget		(kViewRsrcType) : ButtonWidget 	(ClassID = kSpellChangeButtonBoss) { };
+type SpellChangeAllButtonWidget		(kViewRsrcType) : ButtonWidget 	(ClassID = kSpellChangeAllButtonBoss) { };
+type SpellSkipButtonWidget			(kViewRsrcType) : ButtonWidget 	(ClassID = kSpellSkipButtonBoss) { };
+type SpellIgnoreButtonWidget		(kViewRsrcType) : ButtonWidget 	(ClassID = kSpellIgnoreButtonBoss) { };
+type SpellAddAndContinueButtonWidget (kViewRsrcType) : ButtonWidget 	(ClassID = kSpellAddAndContinueButtonBoss) { };
+type SpellAddToListButtonWidget		(kViewRsrcType) : ButtonWidget 	(ClassID = kSpellAddToListButtonBoss) { };
+
+type SpellMisspelledWordBoss			(kViewRsrcType) : FontSpecTextEditBoxWidget 		(ClassID = kSpellMisspelledWordBoss) { };
+type SpellWordObserverBoss			(kViewRsrcType) : FontSpecTextEditBoxWidget 		(ClassID = kSpellWordObserverBoss) { };
+type SpellAlternativesObserverBoss	(kViewRsrcType) : StdTreeBasedListBox 	(ClassID = kSpellAlternativesObserverBoss) { };
+
+type TextWalkerScopeObserverBoss	(kViewRsrcType) : StaticTextWidget				(ClassID = kTextWalkerScopeObserverBoss) { };
+
+type SpellMisspelledTextBoss		(kViewRsrcType) : StaticTextWidget	(ClassID = kSpellMisspelledTextBoss) { };
+type SpellTargetWidget (kViewRsrcType) : DropDownListWidget (ClassID = kSpellTargetListBoss) { };
+type SpellCaseSensitiveCheckBoxWidget (kViewRsrcType) : CheckBoxWidget (ClassID = kSpellCaseSensitiveObserverBoss) { };
+
+//========================================================================================
+// RESOURCES Local Index
+//========================================================================================
+
+resource LocaleIndex (kSpellDialogRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, 	kSpellDialogRsrcID + index_enUS
+		kWildFS, k_deDE, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_frFR, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_jaJP, 	kSpellDialogRsrcID + index_jaJP
+		kWildFS, k_esES, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_ptBR, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_svSE, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_daDK, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_nlNL, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_itIT, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_nbNO, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_fiFI, 	kSpellDialogRsrcID + index_deDE
+		kWildFS, k_koKR, 	kSpellDialogRsrcID + index_jaJP
+		kWildFS, k_csCZ, 	kSpellDialogRsrcID + index_ukUA
+		kWildFS, k_plPL, 	kSpellDialogRsrcID + index_ukUA
+		kWildFS, k_huHU, 	kSpellDialogRsrcID + index_ukUA
+		kWildFS, k_ruRU, 	kSpellDialogRsrcID + index_ukUA
+		kWildFS, k_trTR, 	kSpellDialogRsrcID + index_ukUA
+		kWildFS, k_ukUA, 	kSpellDialogRsrcID + index_ukUA
+		kWildFS, k_elGR, 	kSpellDialogRsrcID + index_elGR
+		kWildFS, k_arAE, 	kSpellDialogRsrcID + index_arAE
+		kWildFS, k_heIL, 	kSpellDialogRsrcID + index_arAE
+	}
+}
+
+#endif // __ODFRC__
+
+#include "SpellDialogViews_enUS.fr"
+#include "SpellDialogViews_deDE.fr"
+#include "SpellDialogViews_jaJP.fr"
+#include "SpellDialogViews_ukUA.fr"
+#include "SpellDialogViews_elGR.fr"
+#include "SpellDialogViews_arAE.fr"

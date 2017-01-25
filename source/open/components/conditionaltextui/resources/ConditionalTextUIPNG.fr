@@ -1,0 +1,77 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/conditionaltextui/resources/ConditionalTextUIPNG.fr $
+//  
+//  Owner: Michele Stutzman
+//  
+//  $Author: devtecbj $
+//  
+//  $DateTime: 2014/03/11 10:35:53 $
+//  
+//  $Revision: #2 $
+//  
+//  $Change: 871398 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#include "IconPNGDefs.h"
+#include "ConditionalTextUIDefs.h"
+
+resource PNGA(kConditionalTextUIPanelIconRsrcID) "SP_PL_TextConditional_N.png"
+resource PNGAD(kConditionalTextUIPanelIconRsrcID) "SP_PL_TextConditional_N_D.png"
+
+resource PNGA(kAppliedToSomeCharactersIndicatorRsrcID) "SP_CheckMarkDim_Xs_N.png"
+resource PNGAD(kAppliedToSomeCharactersIndicatorRsrcID) "SP_CheckMarkDim_Xs_N_D.png"
+
+resource PNGA(kAppliedToAllCharactersIndicatorRsrcID) "SP_CheckMark_Xs_N.png"
+resource PNGAD(kAppliedToAllCharactersIndicatorRsrcID) "SP_CheckMark_Xs_N_D.png"
+
+resource PNGA(kQuickApplyConditionPNGRsrcID) "SP_TextCondQuickApply_Xs_N.png"
+resource PNGAD(kQuickApplyConditionPNGRsrcID) "SP_TextCondQuickApply_Xs_N_D.png"
+
+resource PNGA(kQuickApplyConditionSetPNGRsrcID) "SP_MenuItem_Sm_N.png"
+resource PNGAD(kQuickApplyConditionSetPNGRsrcID) "SP_MenuItem_Sm_N_D.png"
+
+// HiDPI
+resource PNGA(kConditionalTextUIPanelIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_TextConditional_N.png"
+resource PNGAD(kConditionalTextUIPanelIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_TextConditional_N_D.png"
+
+resource PNGA(kAppliedToSomeCharactersIndicatorRsrcID + kHIDPIIconOffset) "SP_x2_CheckMarkDim_Xs_N.png"
+resource PNGAD(kAppliedToSomeCharactersIndicatorRsrcID + kHIDPIIconOffset) "SP_x2_CheckMarkDim_Xs_N_D.png"
+
+resource PNGA(kAppliedToAllCharactersIndicatorRsrcID + kHIDPIIconOffset) "SP_x2_CheckMark_Xs_N.png"
+resource PNGAD(kAppliedToAllCharactersIndicatorRsrcID + kHIDPIIconOffset) "SP_x2_CheckMark_Xs_N_D.png"
+
+resource PNGA(kQuickApplyConditionPNGRsrcID + kHIDPIIconOffset) "SP_x2_TextCondQuickApply_Xs_N.png"
+resource PNGAD(kQuickApplyConditionPNGRsrcID + kHIDPIIconOffset) "SP_x2_TextCondQuickApply_Xs_N_D.png"
+
+resource PNGA(kQuickApplyConditionSetPNGRsrcID + kHIDPIIconOffset) "SP_x2_MenuItem_Sm_N.png"
+resource PNGAD(kQuickApplyConditionSetPNGRsrcID + kHIDPIIconOffset) "SP_x2_MenuItem_Sm_N_D.png"
+
+#ifdef WINDOWS
+resource PNGA(kConditionalTextUIPanelIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_TextConditional_N.png"
+resource PNGAD(kConditionalTextUIPanelIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_TextConditional_N_D.png"
+
+resource PNGA(kAppliedToSomeCharactersIndicatorRsrcID + kHIDPIIconOffset150) "SP_x150_CheckMarkDim_Xs_N.png"
+resource PNGAD(kAppliedToSomeCharactersIndicatorRsrcID + kHIDPIIconOffset150) "SP_x150_CheckMarkDim_Xs_N_D.png"
+
+resource PNGA(kAppliedToAllCharactersIndicatorRsrcID + kHIDPIIconOffset150) "SP_x150_CheckMark_Xs_N.png"
+resource PNGAD(kAppliedToAllCharactersIndicatorRsrcID + kHIDPIIconOffset150) "SP_x150_CheckMark_Xs_N_D.png"
+
+resource PNGA(kQuickApplyConditionPNGRsrcID + kHIDPIIconOffset150) "SP_x150_TextCondQuickApply_Xs_N.png"
+resource PNGAD(kQuickApplyConditionPNGRsrcID + kHIDPIIconOffset150) "SP_x150_TextCondQuickApply_Xs_N_D.png"
+
+resource PNGA(kQuickApplyConditionSetPNGRsrcID + kHIDPIIconOffset150) "SP_x150_MenuItem_Sm_N.png"
+resource PNGAD(kQuickApplyConditionSetPNGRsrcID + kHIDPIIconOffset150) "SP_x150_MenuItem_Sm_N_D.png"
+#endif
+
+#endif

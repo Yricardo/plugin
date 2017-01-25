@@ -1,0 +1,267 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/linksui/resources/LinksUI_PNG.fr $
+//  
+//  Owner: lance bushore
+//  
+//  $Author: devtecbj $
+//  
+//  $DateTime: 2015/04/18 23:36:03 $
+//  
+//  $Revision: #3 $
+//  
+//  $Change: 909056 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#include "IconPNGDefs.h"
+#include "LinksUIResDefs.h"
+
+// Palette Icons
+resource PNGA(kLinksUIPanelIconRsrcID) "SP_PL_Links_N.png"
+resource PNGAD(kLinksUIPanelIconRsrcID) "SP_PL_Links_N_D.png"
+
+resource PNGA(kLinksUIUpdateLinkButtonIconRsrcID) "SP_Update_Wi_N.png"
+resource PNGAD(kLinksUIUpdateLinkButtonIconRsrcID) "SP_Update_Wi_N_D.png"
+
+resource PNGA(kLinksUIRelinkButtonIconRsrcID) "SP_LinkHori_Wi_N.png"
+resource PNGAD(kLinksUIRelinkButtonIconRsrcID) "SP_LinkHori_Wi_N_D.png"
+
+resource PNGA(kLinksUICCRelinkButtonIconRsrcID) "SP_CCRelinkLibrary_Wi_N.png"
+resource PNGAD(kLinksUICCRelinkButtonIconRsrcID) "SP_CCRelinkLibrary_Wi_N_D.png"
+
+resource PNGA(kLinksUIGotoLinkButtonIconResID) "SP_GoToLink_Wi_N.png"
+resource PNGAD(kLinksUIGotoLinkButtonIconResID) "SP_GoToLink_Wi_N_D.png"
+
+resource PNGA(kLinksUIEditOriginalButtonIconResID) "SP_Edit_Wi_N.png"
+resource PNGAD(kLinksUIEditOriginalButtonIconResID) "SP_Edit_Wi_N_D.png"
+
+resource PNGA(kLinksUIGotoNextIconRsrcID) "SP_Next_Xs_N.png"
+resource PNGAD(kLinksUIGotoNextIconRsrcID) "SP_Next_Xs_N_D.png"
+
+resource PNGA(kLinksUIGotoPrevIconRsrcID) "SP_Previous_Xs_N.png"
+resource PNGAD(kLinksUIGotoPrevIconRsrcID) "SP_Previous_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioSmIconRsrcID) "SP_Audio_Xs_N.png"
+resource PNGAD(kLinksUIGenericAudioSmIconRsrcID) "SP_Audio_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioMdIconRsrcID) "SP_Audio_20_N.png"
+resource PNGAD(kLinksUIGenericAudioMdIconRsrcID) "SP_Audio_20_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioLgIconRsrcID) "SP_Audio_40_N.png"
+resource PNGAD(kLinksUIGenericAudioLgIconRsrcID) "SP_Audio_40_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieSmIconRsrcID) "SP_Video_Xs_N.png"
+resource PNGAD(kLinksUIGenericMovieSmIconRsrcID) "SP_Video_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieMdIconRsrcID) "SP_Video_20_N.png"
+resource PNGAD(kLinksUIGenericMovieMdIconRsrcID) "SP_Video_20_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieLgIconRsrcID) "SP_Video_40_N.png"
+resource PNGAD(kLinksUIGenericMovieLgIconRsrcID) "SP_Video_40_N_D.png"
+
+resource PNGA(kLinksUISWFMovieSmIconRsrcID) "SP_Animation_Xs_N.png"
+resource PNGAD(kLinksUISWFMovieSmIconRsrcID) "SP_Animation_Xs_N_D.png"
+
+resource PNGA(kLinksUISWFMovieMdIconRsrcID) "SP_Animation_20_N.png"
+resource PNGAD(kLinksUISWFMovieMdIconRsrcID) "SP_Animation_20_N_D.png"
+
+resource PNGA(kLinksUISWFMovieLgIconRsrcID) "SP_Animation_40_N.png"
+resource PNGAD(kLinksUISWFMovieLgIconRsrcID) "SP_Animation_40_N_D.png"
+
+resource PNGA(kLinksUIGenericTextSmIconRsrcID) "SP_Textfile_Xs_N.png"
+resource PNGAD(kLinksUIGenericTextSmIconRsrcID) "SP_Textfile_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericTextMdIconRsrcID) "SP_Textfile_20_N.png"
+resource PNGAD(kLinksUIGenericTextMdIconRsrcID) "SP_Textfile_20_N_D.png"
+
+resource PNGA(kLinksUIGenericTextLgIconRsrcID) "SP_Textfile_40_N.png"
+resource PNGAD(kLinksUIGenericTextLgIconRsrcID) "SP_Textfile_40_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStorySmIconRsrcID) "SP_ID_InCopyGraphicStory_Xs_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStorySmIconRsrcID) "SP_ID_InCopyGraphicStory_Xs_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStoryMdIconRsrcID) "SP_ID_InCopyGraphicStory_20_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStoryMdIconRsrcID) "SP_ID_InCopyGraphicStory_20_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStoryLgIconRsrcID) "SP_ID_InCopyGraphicStory_40_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStoryLgIconRsrcID) "SP_ID_InCopyGraphicStory_40_N_D.png"
+
+resource PNGA(kLinksUIAddRowIconRsrcID) "SP_Add_Wi_N.png"
+resource PNGAD(kLinksUIAddRowIconRsrcID) "SP_Add_Wi_N_D.png"
+
+resource PNGA(kLinksUIDeleteRowIconRsrcID) "SP_Remove_Wi_N.png"
+resource PNGAD(kLinksUIDeleteRowIconRsrcID) "SP_Remove_Wi_N_D.png"
+
+resource PNGA(kCaptionMetaCharIconRsrc) "SP_Next_Xs_N.png"
+resource PNGAD(kCaptionMetaCharIconRsrc) "SP_Next_Xs_N_D.png"
+
+// HiDPI
+resource PNGA(kLinksUIPanelIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_Links_N.png"
+resource PNGAD(kLinksUIPanelIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_Links_N_D.png"
+
+resource PNGA(kLinksUIUpdateLinkButtonIconRsrcID + kHIDPIIconOffset) "SP_x2_Update_Wi_N.png"
+resource PNGAD(kLinksUIUpdateLinkButtonIconRsrcID + kHIDPIIconOffset) "SP_x2_Update_Wi_N_D.png"
+
+resource PNGA(kLinksUIRelinkButtonIconRsrcID + kHIDPIIconOffset) "SP_x2_LinkHori_Wi_N.png"
+resource PNGAD(kLinksUIRelinkButtonIconRsrcID + kHIDPIIconOffset) "SP_x2_LinkHori_Wi_N_D.png"
+
+resource PNGA(kLinksUICCRelinkButtonIconRsrcID + kHIDPIIconOffset) "SP_x2_CCRelinkLibrary_Wi_N.png"
+resource PNGAD(kLinksUICCRelinkButtonIconRsrcID + kHIDPIIconOffset) "SP_x2_CCRelinkLibrary_Wi_N_D.png"
+
+resource PNGA(kLinksUIGotoLinkButtonIconResID + kHIDPIIconOffset) "SP_x2_GoToLink_Wi_N.png"
+resource PNGAD(kLinksUIGotoLinkButtonIconResID + kHIDPIIconOffset) "SP_x2_GoToLink_Wi_N_D.png"
+
+resource PNGA(kLinksUIEditOriginalButtonIconResID + kHIDPIIconOffset) "SP_x2_Edit_Wi_N.png"
+resource PNGAD(kLinksUIEditOriginalButtonIconResID + kHIDPIIconOffset) "SP_x2_Edit_Wi_N_D.png"
+
+resource PNGA(kLinksUIGotoNextIconRsrcID + kHIDPIIconOffset) "SP_x2_Next_Xs_N.png"
+resource PNGAD(kLinksUIGotoNextIconRsrcID + kHIDPIIconOffset) "SP_x2_Next_Xs_N_D.png"
+
+resource PNGA(kLinksUIGotoPrevIconRsrcID + kHIDPIIconOffset) "SP_x2_Previous_Xs_N.png"
+resource PNGAD(kLinksUIGotoPrevIconRsrcID + kHIDPIIconOffset) "SP_x2_Previous_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Audio_Xs_N.png"
+resource PNGAD(kLinksUIGenericAudioSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Audio_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Audio_20_N.png"
+resource PNGAD(kLinksUIGenericAudioMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Audio_20_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Audio_40_N.png"
+resource PNGAD(kLinksUIGenericAudioLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Audio_40_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Video_Xs_N.png"
+resource PNGAD(kLinksUIGenericMovieSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Video_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Video_20_N.png"
+resource PNGAD(kLinksUIGenericMovieMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Video_20_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Video_40_N.png"
+resource PNGAD(kLinksUIGenericMovieLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Video_40_N_D.png"
+
+resource PNGA(kLinksUISWFMovieSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Animation_Xs_N.png"
+resource PNGAD(kLinksUISWFMovieSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Animation_Xs_N_D.png"
+
+resource PNGA(kLinksUISWFMovieMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Animation_20_N.png"
+resource PNGAD(kLinksUISWFMovieMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Animation_20_N_D.png"
+
+resource PNGA(kLinksUISWFMovieLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Animation_40_N.png"
+resource PNGAD(kLinksUISWFMovieLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Animation_40_N_D.png"
+
+resource PNGA(kLinksUIGenericTextSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Textfile_Xs_N.png"
+resource PNGAD(kLinksUIGenericTextSmIconRsrcID + kHIDPIIconOffset) "SP_x2_Textfile_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericTextMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Textfile_20_N.png"
+resource PNGAD(kLinksUIGenericTextMdIconRsrcID + kHIDPIIconOffset) "SP_x2_Textfile_20_N_D.png"
+
+resource PNGA(kLinksUIGenericTextLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Textfile_40_N.png"
+resource PNGAD(kLinksUIGenericTextLgIconRsrcID + kHIDPIIconOffset) "SP_x2_Textfile_40_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStorySmIconRsrcID + kHIDPIIconOffset) "SP_x2_ID_InCopyGraphicStory_Xs_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStorySmIconRsrcID + kHIDPIIconOffset) "SP_x2_ID_InCopyGraphicStory_Xs_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStoryMdIconRsrcID + kHIDPIIconOffset) "SP_x2_ID_InCopyGraphicStory_20_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStoryMdIconRsrcID + kHIDPIIconOffset) "SP_x2_ID_InCopyGraphicStory_20_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStoryLgIconRsrcID + kHIDPIIconOffset) "SP_x2_ID_InCopyGraphicStory_40_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStoryLgIconRsrcID + kHIDPIIconOffset) "SP_x2_ID_InCopyGraphicStory_40_N_D.png"
+
+resource PNGA(kLinksUIAddRowIconRsrcID + kHIDPIIconOffset) "SP_x2_Add_Wi_N.png"
+resource PNGAD(kLinksUIAddRowIconRsrcID + kHIDPIIconOffset) "SP_x2_Add_Wi_N_D.png"
+
+resource PNGA(kLinksUIDeleteRowIconRsrcID + kHIDPIIconOffset) "SP_x2_Remove_Wi_N.png"
+resource PNGAD(kLinksUIDeleteRowIconRsrcID + kHIDPIIconOffset) "SP_x2_Remove_Wi_N_D.png"
+
+resource PNGA(kCaptionMetaCharIconRsrc + kHIDPIIconOffset) "SP_x2_Next_Xs_N.png"
+resource PNGAD(kCaptionMetaCharIconRsrc + kHIDPIIconOffset) "SP_x2_Next_Xs_N_D.png"
+
+#ifdef WINDOWS
+resource PNGA(kLinksUIPanelIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_Links_N.png"
+resource PNGAD(kLinksUIPanelIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_Links_N_D.png"
+
+resource PNGA(kLinksUIUpdateLinkButtonIconRsrcID + kHIDPIIconOffset150) "SP_x150_Update_Wi_N.png"
+resource PNGAD(kLinksUIUpdateLinkButtonIconRsrcID + kHIDPIIconOffset150) "SP_x150_Update_Wi_N_D.png"
+
+resource PNGA(kLinksUIRelinkButtonIconRsrcID + kHIDPIIconOffset150) "SP_x150_LinkHori_Wi_N.png"
+resource PNGAD(kLinksUIRelinkButtonIconRsrcID + kHIDPIIconOffset150) "SP_x150_LinkHori_Wi_N_D.png"
+
+resource PNGA(kLinksUICCRelinkButtonIconRsrcID + kHIDPIIconOffset150) "SP_x150_CCRelinkLibrary_Wi_N.png"
+resource PNGAD(kLinksUICCRelinkButtonIconRsrcID + kHIDPIIconOffset150) "SP_x150_CCRelinkLibrary_Wi_N_D.png"
+
+resource PNGA(kLinksUIGotoLinkButtonIconResID + kHIDPIIconOffset150) "SP_x150_GoToLink_Wi_N.png"
+resource PNGAD(kLinksUIGotoLinkButtonIconResID + kHIDPIIconOffset150) "SP_x150_GoToLink_Wi_N_D.png"
+
+resource PNGA(kLinksUIEditOriginalButtonIconResID + kHIDPIIconOffset150) "SP_x150_Edit_Wi_N.png"
+resource PNGAD(kLinksUIEditOriginalButtonIconResID + kHIDPIIconOffset150) "SP_x150_Edit_Wi_N_D.png"
+
+resource PNGA(kLinksUIGotoNextIconRsrcID + kHIDPIIconOffset150) "SP_x150_Next_Xs_N.png"
+resource PNGAD(kLinksUIGotoNextIconRsrcID + kHIDPIIconOffset150) "SP_x150_Next_Xs_N_D.png"
+
+resource PNGA(kLinksUIGotoPrevIconRsrcID + kHIDPIIconOffset150) "SP_x150_Previous_Xs_N.png"
+resource PNGAD(kLinksUIGotoPrevIconRsrcID + kHIDPIIconOffset150) "SP_x150_Previous_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Audio_Xs_N.png"
+resource PNGAD(kLinksUIGenericAudioSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Audio_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Audio_20_N.png"
+resource PNGAD(kLinksUIGenericAudioMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Audio_20_N_D.png"
+
+resource PNGA(kLinksUIGenericAudioLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Audio_40_N.png"
+resource PNGAD(kLinksUIGenericAudioLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Audio_40_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Video_Xs_N.png"
+resource PNGAD(kLinksUIGenericMovieSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Video_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Video_20_N.png"
+resource PNGAD(kLinksUIGenericMovieMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Video_20_N_D.png"
+
+resource PNGA(kLinksUIGenericMovieLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Video_40_N.png"
+resource PNGAD(kLinksUIGenericMovieLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Video_40_N_D.png"
+
+resource PNGA(kLinksUISWFMovieSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Animation_Xs_N.png"
+resource PNGAD(kLinksUISWFMovieSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Animation_Xs_N_D.png"
+
+resource PNGA(kLinksUISWFMovieMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Animation_20_N.png"
+resource PNGAD(kLinksUISWFMovieMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Animation_20_N_D.png"
+
+resource PNGA(kLinksUISWFMovieLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Animation_40_N.png"
+resource PNGAD(kLinksUISWFMovieLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Animation_40_N_D.png"
+
+resource PNGA(kLinksUIGenericTextSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Textfile_Xs_N.png"
+resource PNGAD(kLinksUIGenericTextSmIconRsrcID + kHIDPIIconOffset150) "SP_x150_Textfile_Xs_N_D.png"
+
+resource PNGA(kLinksUIGenericTextMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Textfile_20_N.png"
+resource PNGAD(kLinksUIGenericTextMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_Textfile_20_N_D.png"
+
+resource PNGA(kLinksUIGenericTextLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Textfile_40_N.png"
+resource PNGAD(kLinksUIGenericTextLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_Textfile_40_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStorySmIconRsrcID + kHIDPIIconOffset150) "SP_x150_ID_InCopyGraphicStory_Xs_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStorySmIconRsrcID + kHIDPIIconOffset150) "SP_x150_ID_InCopyGraphicStory_Xs_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStoryMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_ID_InCopyGraphicStory_20_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStoryMdIconRsrcID + kHIDPIIconOffset150) "SP_x150_ID_InCopyGraphicStory_20_N_D.png"
+
+resource PNGA(kLinksUIInCopyGraphicStoryLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_ID_InCopyGraphicStory_40_N.png"
+resource PNGAD(kLinksUIInCopyGraphicStoryLgIconRsrcID + kHIDPIIconOffset150) "SP_x150_ID_InCopyGraphicStory_40_N_D.png"
+
+resource PNGA(kLinksUIAddRowIconRsrcID + kHIDPIIconOffset150) "SP_x150_Add_Wi_N.png"
+resource PNGAD(kLinksUIAddRowIconRsrcID + kHIDPIIconOffset150) "SP_x150_Add_Wi_N_D.png"
+
+resource PNGA(kLinksUIDeleteRowIconRsrcID + kHIDPIIconOffset150) "SP_x150_Remove_Wi_N.png"
+resource PNGAD(kLinksUIDeleteRowIconRsrcID + kHIDPIIconOffset150) "SP_x150_Remove_Wi_N_D.png"
+
+resource PNGA(kCaptionMetaCharIconRsrc + kHIDPIIconOffset150) "SP_x150_Next_Xs_N.png"
+resource PNGAD(kCaptionMetaCharIconRsrc + kHIDPIIconOffset150) "SP_x150_Next_Xs_N_D.png"
+#endif
+
+#endif

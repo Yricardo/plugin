@@ -1,0 +1,153 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/dynamicdocumentsui/resources/AnimationUIPng.fr $
+//  
+//  Owner: SusanCL
+//  
+//  $Author: devtecbj $
+//  
+//  $DateTime: 2015/03/13 15:57:09 $
+//  
+//  $Revision: #3 $
+//  
+//  $Change: 905372 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#include "IconPNGDefs.h"
+#include "DynamicDocumentsUIDefs.h"
+
+resource PNGA(kAnimationUIPanelIconRsrcID) "SP_PL_Animation_N.png"
+resource PNGAD(kAnimationUIPanelIconRsrcID) "SP_PL_Animation_N_D.png"
+
+resource PNGA(kAnimationUIPresetPopupMenuIconRsrcID) "SP_DownArrow_Xs_N.png"
+resource PNGAD(kAnimationUIPresetPopupMenuIconRsrcID) "SP_DownArrow_Xs_N_D.png"
+
+resource PNGA(kAnimationUIEventSelectorIconRsrcID) "SP_DownArrow_Xs_N.png"
+resource PNGAD(kAnimationUIEventSelectorIconRsrcID) "SP_DownArrow_Xs_N_D.png"
+
+resource PNGA(kConvertToMotionPath) "SP_ConvertToMotionPath_Wi_N.png"
+resource PNGAD(kConvertToMotionPath) "SP_ConvertToMotionPath_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowPreviewIcon) "SP_ShowPreviewPanel_Wi_N.png"
+resource PNGAD(kAnimationUIShowPreviewIcon) "SP_ShowPreviewPanel_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowProxyIcon) "SP_ShowProxy_Wi_N.png"
+resource PNGAD(kAnimationUIShowProxyIcon) "SP_ShowProxy_Wi_N_D.png"
+
+resource PNGA(kAnimationUIScaleLockIcon) "SP_LinkHori_Sm_N.png"
+resource PNGAD(kAnimationUIScaleLockIcon) "SP_LinkHori_Sm_N_D.png"
+
+resource PNGA(kAnimationUIScaleUnlockIcon) "SP_UnLinkHori_Sm_N.png"
+resource PNGAD(kAnimationUIScaleUnlockIcon) "SP_UnLinkHori_Sm_N_D.png"
+
+resource PNGA(kAnimationUIButtonTriggerIcon) "SP_CreateTriggerButton_Sm_N.png"
+resource PNGAD(kAnimationUIButtonTriggerIcon) "SP_CreateTriggerButton_Sm_N_D.png"
+
+resource PNGA(kAnimationUIClearAnimationIcon) "SP_Delete_Wi_N.png"
+resource PNGAD(kAnimationUIClearAnimationIcon) "SP_Delete_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowTimingIcon) "SP_TimingPanel_Wi_N.png"
+resource PNGAD(kAnimationUIShowTimingIcon) "SP_TimingPanel_Wi_N_D.png"
+
+resource PNGA(kAnimationUIAnimationAdornmentIcon) "SP_AnimationAdorn_Lg_N.png"
+
+//	Used only if event list is implemented as owner-draw list.
+resource PNGA(kAnimationUITriggerEventCheckedIcon) "SP_CheckMark_Xs_N.png"
+resource PNGAD(kAnimationUITriggerEventCheckedIcon) "SP_CheckMark_Xs_N_D.png"
+
+resource PNGA(kAnimationUITriggerEventBlankIcon) "SP_Blank_Md_N.png"
+
+// HiDPI
+resource PNGA(kAnimationUIPanelIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_Animation_N.png"
+resource PNGAD(kAnimationUIPanelIconRsrcID + kHIDPIIconOffset) "SP_x2_PL_Animation_N_D.png"
+
+resource PNGA(kAnimationUIPresetPopupMenuIconRsrcID + kHIDPIIconOffset) "SP_x2_DownArrow_Xs_N.png"
+resource PNGAD(kAnimationUIPresetPopupMenuIconRsrcID + kHIDPIIconOffset) "SP_x2_DownArrow_Xs_N_D.png"
+
+resource PNGA(kAnimationUIEventSelectorIconRsrcID + kHIDPIIconOffset) "SP_x2_DownArrow_Xs_N.png"
+resource PNGAD(kAnimationUIEventSelectorIconRsrcID + kHIDPIIconOffset) "SP_x2_DownArrow_Xs_N_D.png"
+
+resource PNGA(kConvertToMotionPath + kHIDPIIconOffset) "SP_x2_ConvertToMotionPath_Wi_N.png"
+resource PNGAD(kConvertToMotionPath + kHIDPIIconOffset) "SP_x2_ConvertToMotionPath_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowPreviewIcon + kHIDPIIconOffset) "SP_x2_ShowPreviewPanel_Wi_N.png"
+resource PNGAD(kAnimationUIShowPreviewIcon + kHIDPIIconOffset) "SP_x2_ShowPreviewPanel_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowProxyIcon + kHIDPIIconOffset) "SP_x2_ShowProxy_Wi_N.png"
+resource PNGAD(kAnimationUIShowProxyIcon + kHIDPIIconOffset) "SP_x2_ShowProxy_Wi_N_D.png"
+
+resource PNGA(kAnimationUIScaleLockIcon + kHIDPIIconOffset) "SP_x2_LinkHori_Sm_N.png"
+resource PNGAD(kAnimationUIScaleLockIcon + kHIDPIIconOffset) "SP_x2_LinkHori_Sm_N_D.png"
+
+resource PNGA(kAnimationUIScaleUnlockIcon + kHIDPIIconOffset) "SP_x2_UnLinkHori_Sm_N.png"
+resource PNGAD(kAnimationUIScaleUnlockIcon + kHIDPIIconOffset) "SP_x2_UnLinkHori_Sm_N_D.png"
+
+resource PNGA(kAnimationUIButtonTriggerIcon + kHIDPIIconOffset) "SP_x2_CreateTriggerButton_Sm_N.png"
+resource PNGAD(kAnimationUIButtonTriggerIcon + kHIDPIIconOffset) "SP_x2_CreateTriggerButton_Sm_N_D.png"
+
+resource PNGA(kAnimationUIClearAnimationIcon + kHIDPIIconOffset) "SP_x2_Delete_Wi_N.png"
+resource PNGAD(kAnimationUIClearAnimationIcon + kHIDPIIconOffset) "SP_x2_Delete_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowTimingIcon + kHIDPIIconOffset) "SP_x2_TimingPanel_Wi_N.png"
+resource PNGAD(kAnimationUIShowTimingIcon + kHIDPIIconOffset) "SP_x2_TimingPanel_Wi_N_D.png"
+
+resource PNGA(kAnimationUIAnimationAdornmentIcon + kHIDPIIconOffset) "SP_x2_AnimationAdorn_Lg_N.png"
+
+resource PNGA(kAnimationUITriggerEventCheckedIcon + kHIDPIIconOffset) "SP_x2_CheckMark_Xs_N.png"
+resource PNGAD(kAnimationUITriggerEventCheckedIcon + kHIDPIIconOffset) "SP_x2_CheckMark_Xs_N_D.png"
+
+resource PNGA(kAnimationUITriggerEventBlankIcon + kHIDPIIconOffset) "SP_x2_Blank_Md_N.png"
+
+#ifdef WINDOWS
+resource PNGA(kAnimationUIPanelIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_Animation_N.png"
+resource PNGAD(kAnimationUIPanelIconRsrcID + kHIDPIIconOffset150) "SP_x150_PL_Animation_N_D.png"
+
+resource PNGA(kAnimationUIPresetPopupMenuIconRsrcID + kHIDPIIconOffset150) "SP_x150_DownArrow_Xs_N.png"
+resource PNGAD(kAnimationUIPresetPopupMenuIconRsrcID + kHIDPIIconOffset150) "SP_x150_DownArrow_Xs_N_D.png"
+
+resource PNGA(kAnimationUIEventSelectorIconRsrcID + kHIDPIIconOffset150) "SP_x150_DownArrow_Xs_N.png"
+resource PNGAD(kAnimationUIEventSelectorIconRsrcID + kHIDPIIconOffset150) "SP_x150_DownArrow_Xs_N_D.png"
+
+resource PNGA(kConvertToMotionPath + kHIDPIIconOffset150) "SP_x150_ConvertToMotionPath_Wi_N.png"
+resource PNGAD(kConvertToMotionPath + kHIDPIIconOffset150) "SP_x150_ConvertToMotionPath_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowPreviewIcon + kHIDPIIconOffset150) "SP_x150_ShowPreviewPanel_Wi_N.png"
+resource PNGAD(kAnimationUIShowPreviewIcon + kHIDPIIconOffset150) "SP_x150_ShowPreviewPanel_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowProxyIcon + kHIDPIIconOffset150) "SP_x150_ShowProxy_Wi_N.png"
+resource PNGAD(kAnimationUIShowProxyIcon + kHIDPIIconOffset150) "SP_x150_ShowProxy_Wi_N_D.png"
+
+resource PNGA(kAnimationUIScaleLockIcon + kHIDPIIconOffset150) "SP_x150_LinkHori_Sm_N.png"
+resource PNGAD(kAnimationUIScaleLockIcon + kHIDPIIconOffset150) "SP_x150_LinkHori_Sm_N_D.png"
+
+resource PNGA(kAnimationUIScaleUnlockIcon + kHIDPIIconOffset150) "SP_x150_UnLinkHori_Sm_N.png"
+resource PNGAD(kAnimationUIScaleUnlockIcon + kHIDPIIconOffset150) "SP_x150_UnLinkHori_Sm_N_D.png"
+
+resource PNGA(kAnimationUIButtonTriggerIcon + kHIDPIIconOffset150) "SP_x150_CreateTriggerButton_Sm_N.png"
+resource PNGAD(kAnimationUIButtonTriggerIcon + kHIDPIIconOffset150) "SP_x150_CreateTriggerButton_Sm_N_D.png"
+
+resource PNGA(kAnimationUIClearAnimationIcon + kHIDPIIconOffset150) "SP_x150_Delete_Wi_N.png"
+resource PNGAD(kAnimationUIClearAnimationIcon + kHIDPIIconOffset150) "SP_x150_Delete_Wi_N_D.png"
+
+resource PNGA(kAnimationUIShowTimingIcon + kHIDPIIconOffset150) "SP_x150_TimingPanel_Wi_N.png"
+resource PNGAD(kAnimationUIShowTimingIcon + kHIDPIIconOffset150) "SP_x150_TimingPanel_Wi_N_D.png"
+
+resource PNGA(kAnimationUIAnimationAdornmentIcon + kHIDPIIconOffset150) "SP_x150_AnimationAdorn_Lg_N.png"
+
+resource PNGA(kAnimationUITriggerEventCheckedIcon + kHIDPIIconOffset150) "SP_x150_CheckMark_Xs_N.png"
+resource PNGAD(kAnimationUITriggerEventCheckedIcon + kHIDPIIconOffset150) "SP_x150_CheckMark_Xs_N_D.png"
+
+resource PNGA(kAnimationUITriggerEventBlankIcon + kHIDPIIconOffset150) "SP_x150_Blank_Md_N.png"
+#endif
+
+#endif

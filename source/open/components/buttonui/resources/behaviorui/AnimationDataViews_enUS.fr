@@ -1,0 +1,146 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/buttonui/resources/behaviorui/AnimationDataViews_enUS.fr $
+//  
+//  Owner: Greg St. Pierre
+//  
+//  $Author: gmatthew $
+//  
+//  $DateTime: 2013/06/18 15:15:50 $
+//  
+//  $Revision: #1 $
+//  
+//  $Change: 853167 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#ifdef __ODFRC__
+#include "InterfaceColorDefines.h"
+
+//========================================================================================
+// AnimationDataPanel resource
+//========================================================================================
+
+resource AnimationDataPanel (kAnimationPanelRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kAnimationPanelWidgetID, kPMRsrcID_None, // WidgetId, RsrcId
+	kBindNone,					// Frame binding
+	Frame(0, 0, kButtonPanelMinWidth-14, 80)		// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	kTrue,						// EraseBeforeDraw
+	kInterfacePaletteFill,		// Erase to color
+	kFalse,						// DrawDropShadow
+	"",							// Panel name	
+	{
+		EVEGenericPanelWidget
+		(
+			kInvalidWidgetID,	// WidgetId
+			0,0,				// RsrcId
+			kBindNone,						// Frame binding
+			Frame(0, 0, kButtonPanelMinWidth-14, 80)		// Frame
+			kTrue,							// Visible
+			kTrue,							// Enabled
+			kEVENoSpaceAfter|kEVEArrangeChildrenInRow|kEVEAlignLeft|kEVENoMargin,		//EVE info
+			{
+				EVEGenericPanelWidget
+				(
+					kInvalidWidgetID,	// WidgetId
+					0,0,				// RsrcId
+					kBindNone,						// Frame binding
+					Frame(0, 0, kButtonStaticWidgetsWidth, 45)		// Frame
+					kTrue,							// Visible
+					kTrue,							// Enabled
+					kEVERegularSpaceAfter|kEVEArrangeChildrenInColumn|kEVEAlignRight|kEVEChildRegularSpaceAfter,		//EVE info
+					{
+						EVEStaticTextWidget
+						(
+							kAnimationLabelWidgetID, kSysStaticTextPMRsrcId,	// WidgetId, RsrcId
+							kBindNone,												// Frame binding
+							Frame(5, 0, kButtonStaticWidgetsWidth,17)		// Frame
+							kTrue, kTrue, kAlignRight,								// Visible, Enabled, Alignment
+							kDontEllipsize,	kTrue,									// Ellipsize style, Convert ampersands
+							"$$$/Dialog/Behaviors/Animation/Animation:",
+							kAnimationOperationWidgetID,
+							kEVERegularSpaceAfter
+						),
+						EVEStaticTextWidget
+						(
+							kAnimationOperationLabelWidgetID, kSysStaticTextPMRsrcId,	// WidgetId, RsrcId
+							kBindNone,											// Frame binding
+							Frame(5, 25, kButtonStaticWidgetsWidth,42)		// Frame
+							kTrue, kTrue, kAlignRight,							// Visible, Enabled, Alignment
+							kDontEllipsize,	kTrue,								// Ellipsize style, Convert ampersands
+							"$$$/Dialog/Behaviors/Animation/Play Options:",
+							kAnimationWidgetID,
+							kEVERegularSpaceAfter
+						),
+
+					}
+				)
+				
+				EVEGenericPanelWidget
+				(
+					kInvalidWidgetID,	// WidgetId
+					0,0,				// RsrcId
+					kBindNone,						// Frame binding
+					Frame(kButtonStaticWidgetsWidth+5, 0, kButtonPanelMinWidth-15, 65)		// Frame
+					kTrue,							// Visible
+					kTrue,							// Enabled
+					kEVENoSpaceAfter|kEVEArrangeChildrenInColumn|kEVEAlignLeft|kEVEChildRegularSpaceAfter,		//EVE info
+					{
+						EVEGenericPanelWidget
+						(
+							kInvalidWidgetID,	// WidgetId
+							0,0,				// RsrcId
+							kBindNone,						// Frame binding
+							Frame(0, 0, kActionChoiceWidgetsWidth,17)		// Frame
+							kTrue,							// Visible
+							kTrue,							// Enabled
+							kEVEDontArrangeChildren|kEVERegularSpaceAfter,		//EVE info
+							{
+								AnimationChoice
+								(
+									kAnimationWidgetID, kSysDropDownPMRsrcId, kBindNone,
+									Frame(0, 0, kActionChoiceWidgetsWidth,17)		// Frame
+									kTrue, kTrue,
+									{{
+									}}
+								),
+							}
+						)
+						AnimationOpChoice
+						(
+							kAnimationOperationWidgetID, kSysDropDownPMRsrcId, kBindNone,
+							Frame(0, 25, kActionChoiceWidgetsWidth,42)		// Frame
+							kTrue, kTrue,
+							{{
+							}}
+						),
+						EVECheckBoxWidget
+						(
+							kAnimationAutoReverseWidgetID,					// WID
+							kSysCheckBoxPMRsrcId,							// RsrcId
+							kBindNone,										// Frame binding
+							Frame(0,45,kActionChoiceWidgetsWidth,62)								// Frame
+							kTrue, kTrue,									// Visible, Enabled
+							kAlignLeft,										// Alignment
+							"$$$/Dialog/Behaviors/Animation/AutoReverse"	// Initial Text
+							kEVEAlignLeft|kEVESmallSpaceAfter,
+						),
+					}
+				)
+			}
+		)
+	},
+	kAnimationBehavior
+}
+
+#endif

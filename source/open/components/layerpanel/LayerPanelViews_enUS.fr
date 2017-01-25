@@ -1,0 +1,279 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/layerpanel/LayerPanelViews_enUS.fr $
+//  
+//  Owner: Michael Burbidge
+//  
+//  $Author: devtecbj $
+//  
+//  $DateTime: 2014/03/11 10:35:53 $
+//  
+//  $Revision: #2 $
+//  
+//  $Change: 871398 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#include "IconStyleDefs.h"
+#include "InterfaceColorDefines.h"
+#include "TreeViewDefs.h"
+
+#ifdef __ODFRC__
+
+resource LayerPanelWidget (kLayerPanelRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kLayerParentWidgetId, kPMRsrcID_None,			// WidgetId, RsrcId
+	kBindAll,					// Frame binding
+	Frame(0, 0, 207, 92),				// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	kTrue,						// EraseBeforeDrawing
+	kInterfacePaletteFill,		// Erase to color
+	"#LayerHierPanelName",					// Panel name
+	{	
+		SeparatorWidget
+		(
+			kInvalidWidgetID, kPMRsrcID_None,			// WidgetId, RsrcId
+			kBindRight | kBindLeft,				// Frame binding
+			Frame(0,0,207,0)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+		)
+		LayerPanelTreeWidget
+		(
+			kLayerPanelTreeWidgetID, kPMRsrcID_None,// WidgetId, RsrcId
+			kBindAll,
+			Frame(0, 1, 207, 75)		// Frame
+			kTrue, kTrue,				// Visible, Enabled
+			kTrue,						// EraseBeforeDraw. This is made true so that it erases the lower line of the above SeparatorWidget, removing the bevel effect.
+			kInterfacePaletteFill,		// InterfaceColor
+			"",// name
+			kHideRootNode, //Options
+			kFalse,						//Use H Scroll bar
+			kTrue,						//Use V scroll bar
+			kLayerRegularRowHeight,							// Vertical Scroll Button Increment
+			kLayerRegularRowHeight,							// Vertical Thumb Scroll Increment
+			10,							// Horizontal Scroll Button Increment - Not Used
+			10,							// Horizontal Thumb Scroll Increment - Not Used
+			2,							// Items selectable, 0 = No Selection, 1 = Single Selection, 2 = Multiple Selection
+			kTrue,						// Allow children from multiple parents to be selected
+			kTrue,						// Allow discontiguous selection
+			{
+			},
+			{{
+				IID_IOBSERVER, // need to attach this one first, so it rebuilds the tree
+				IID_ISELECTIONOBSERVER,
+			}},
+	
+		),
+		SeparatorWidget
+		(
+			kLayerPanelSeparatorWidgetID, kPMRsrcID_None,			// WidgetId, RsrcId
+			kBindBottom | kBindRight | kBindLeft,				// Frame binding
+			Frame(0,75,207,76)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+		)
+		// ----- Layer control strip. (status, new & delete buttons)
+		GenericPanelWidget
+		(
+			kLayerControlStripWidgetID, kPMRsrcID_None,			// WidgetId, RsrcId
+			kBindBottom | kBindRight | kBindLeft,				// Frame binding
+			Frame(0,76,207,92)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			""
+			{
+				StaticTextWidget
+				(
+					kLayerStatusWidgetID, kSysStaticTextPMRsrcId,		// WidgetId, RsrcId
+					kBindBottom | kBindRight | kBindLeft,								// Frame binding
+					Frame(4,0,132,16)		// Frame
+					kTrue, kTrue, kAlignLeft,							// Visible, Enabled
+					kDontEllipsize, kTrue,										// Ellipsize style, Convert ampersands
+					"",													// Text
+					0
+				),
+	 			NewLayerButton
+				(
+					kLayerNewButtonWidgetID, kIconNew, kApplicationRsrcPluginID,	// WidgetId, RsrcId
+					kBindBottom | kBindRight,							// Frame binding
+					Frame(132,-1,162,-1 + kPanelIconHeight)		// Frame
+					kTrue, kTrue,										// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+				DeleteLayerButton
+				(
+					kLayerDeleteButtonWidgetID, kIconDelete, kApplicationRsrcPluginID,// WidgetId, RsrcId
+					kBindBottom | kBindRight,							// Frame binding
+					Frame(162,-1,192,-1 + kPanelIconHeight)		// Frame
+					kTrue, kTrue,										// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+			}
+		),
+	
+	},
+	"LayerPanelPopup",			// Popup menu name	
+}
+
+
+resource LayerTreeElement (kLayerPageItemElementPanelRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kLayerPageItemElementWidgetID, 0,kLayerPanelPluginID,	// WidgetId, RsrcId
+	kBindLeft | kBindRight,		// Frame binding
+	Frame(0, 0, 194, 19),				// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	"",							// Panel name
+	{
+		LayerPanelEyeball
+		(
+			kLayerListElementEyeballWidgetID, kEyeballIcon, kApplicationRsrcPluginID, // WidgetId, RsrcId
+			kBindLeft | kBindTop | kBindBottom,					// Frame binding
+			Frame(0,1,18,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			kADBEIconSuiteButtonType,
+		),
+		LayerPageItemItemPencil
+		(
+			kLayerPageItemElementPencilWidgetID, kLayerLockedIcon, kLayerPanelPluginID, // WidgetId, RsrcId
+			kBindLeft | kBindTop | kBindBottom,					// Frame binding
+			Frame(19,1,37,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			kADBEIconSuiteButtonType,
+		),
+		LayerPanelSwatch
+		(
+			kLayerListElementSwatchWidgetID, kPMRsrcID_None,	// WidgetId, RsrcId
+			kBindLeft | kBindTop | kBindBottom,					// Frame binding
+			Frame(37,0,42,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+		),
+		GenericPanelWidget
+		(
+			kLayerPageItemNamePanelWidgetID, kPMRsrcID_None,			// WidgetId, RsrcId
+			kBindAll,				// Frame binding
+			Frame(kPageItemNamePanelXLoc,0,194,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			""
+			{
+				TreeExpanderWidget
+				(
+					kTreeNodeExpanderWidgetID,			// WidgetId
+					kTreeBranchCollapsedRsrcID,			// RsrcId for collapsed node icon
+					kApplicationRsrcPluginID,				// RsrcPlugin for collapsed node icon
+					kBindLeft | kBindTop | kBindBottom,							// Frame binding
+					Frame(0,1,12,19),					// Frame
+					kFalse, kTrue,						// Visible, Enabled
+					kTreeBranchExpandedRsrcID, 			// RsrcId for expanded node icon
+					kApplicationRsrcPluginID,			// RsrcPlugin for expanded node icon
+					kTrue,								// Cmd-Click expands/collapses children
+					kTrue,								// Scroll to show children when expanded
+					kADBEIconSuiteButtonType,
+				),
+				LayerPageItemName
+				(
+					kLayerPageItemElementTextWidgetID, kSysStaticTextPMRsrcId,		// WidgetId, RsrcId
+					kBindAll,								// Frame binding
+					Frame(14,1,138,18)		// Frame
+					kTrue, kTrue, kAlignLeft,							// Visible, Enabled
+					kEllipsizeMiddle, kTrue,										// Ellipsize style, Convert ampersands
+					"",								// Initial text
+					kEditbox,
+					kFalse, kTrue,					// key focus, editable
+					100								// max num chars allowed
+				),
+				PageItemSelectionProxy
+				(
+					kPageItemSelectionProxyWidgetID, kPMRsrcID_None,		// WidgetId, RsrcId
+					kBindRight | kBindTop | kBindBottom,				// Frame binding
+					Frame((194 - kPageItemNamePanelXLoc - 20),0,(194 - kPageItemNamePanelXLoc),19)		// Frame
+					kTrue, kTrue,										// Visible, Enabled
+				),
+			}
+		)
+	}
+}
+
+resource LayerTreeElement (kLayerElementPanelRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kLayerListParentWidgetId, 0,kLayerPanelPluginID,	// WidgetId, RsrcId
+	kBindLeft | kBindRight,		// Frame binding
+	Frame(0, 0, 194, 19),				// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	"",							// Panel name
+	{
+		LayerPanelEyeball
+		(
+			kLayerListElementEyeballWidgetID, kEyeballIcon, kApplicationRsrcPluginID, // WidgetId, RsrcId
+			kBindLeft | kBindTop | kBindBottom,					// Frame binding
+			Frame(0,1,18,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			kADBEIconSuiteButtonDrawWellType,
+		),
+		LayerPanelPencil
+		(
+			kLayerListElementPencilWidgetID, kLayerLockedIcon, kLayerPanelPluginID, // WidgetId, RsrcId
+			kBindLeft | kBindTop | kBindBottom,					// Frame binding
+			Frame(19,1,37,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			kADBEIconSuiteButtonDrawWellType,
+		),
+		LayerPanelSwatch
+		(
+			kLayerListElementSwatchWidgetID, kPMRsrcID_None,	// WidgetId, RsrcId
+			kBindLeft | kBindTop | kBindBottom,					// Frame binding
+			Frame(37,0,42,19)		// Frame
+			kTrue, kTrue,										// Visible, Enabled
+		),
+		TreeExpanderWidget
+		(
+			kTreeNodeExpanderWidgetID,			// WidgetId
+			kTreeBranchCollapsedRsrcID,			// RsrcId for collapsed node icon
+			kApplicationRsrcPluginID,				// RsrcPlugin for collapsed node icon
+			kBindLeft | kBindTop | kBindBottom,							// Frame binding
+			Frame(43,1,55,19),					// Frame
+			kTrue, kTrue,						// Visible, Enabled
+			kTreeBranchExpandedRsrcID, 			// RsrcId for expanded node icon
+			kApplicationRsrcPluginID,			// RsrcPlugin for expanded node icon
+			kTrue,								// Cmd-Click expands/collapses children
+			kTrue,								// Scroll to show children when expanded
+			kADBEIconSuiteButtonType,
+		),
+		LayerPanelName
+		(
+			kLayerListElementNameWidgetID, kPMRsrcID_None,		// WidgetId, RsrcId
+			kBindAll,											// Frame binding
+			Frame(56,0,154,19)									// Frame
+			kTrue, kTrue, kAlignLeft,							// Visible, Enabled
+			kEllipsizeMiddle, kTrue,							// Ellipsize style, Convert ampersands
+			"",													// Initial text
+			kEditbox,
+			kFalse, kTrue,										// key focus, editable
+			100													// max num chars allowed
+		),
+		LayerPanelActive
+		(
+			kLayerListElementActiveWidgetID, kLayerBlankIcon, kLayerPanelPluginID, // WidgetId, RsrcId
+			kBindRight | kBindTop | kBindBottom,				// Frame binding
+			Frame(158,0,173,19)									// Frame
+			kTrue, kTrue,										// Visible, Enabled
+			kADBEIconSuiteButtonType,
+		),
+		LayerPanelSelectionProxy
+		(
+			kLayerListElementProxyWidgetID, kPMRsrcID_None,		// WidgetId, RsrcId
+			kBindRight | kBindTop | kBindBottom,				// Frame binding
+			Frame(174,0,194,19)									// Frame
+			kTrue, kTrue,										// Visible, Enabled
+		),
+	}
+}
+
+#endif

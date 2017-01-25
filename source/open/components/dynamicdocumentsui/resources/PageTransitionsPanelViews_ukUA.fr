@@ -1,0 +1,209 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/dynamicdocumentsui/resources/PageTransitionsPanelViews_ukUA.fr $
+//  
+//  Owner: Yeming Liu
+//  
+//  $Author: gmatthew $
+//  
+//  $DateTime: 2013/06/18 15:15:50 $
+//  
+//  $Revision: #1 $
+//  
+//  $Change: 853167 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#include "InterfaceColorDefines.h"
+
+#ifdef __ODFRC__
+
+
+//========================================================================================
+// PageTransitionsPanelView resource
+//========================================================================================
+
+resource PageTransitionsPanelWidget (kPageTransitionsPaletteRsrcID + index_ukUA)
+{
+	__FILE__, __LINE__,
+	kPageTransitionsPanelWidgetID, kPMRsrcID_None, // WidgetId, RsrcId
+	kBindNone,					// Frame binding
+	Frame(0,15,207,214)			// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	kTrue,						// EraseBeforeDraw
+	kInterfacePaletteFill,		// Erase to color
+	kFalse,						// DrawDropShadow
+	"kPageTransitionsPanelName",				// Panel name	
+	{
+		EVEGenericPanelWidget
+		(
+			kPageTransitionsPanelGroupWidgetID, kPMRsrcID_None,
+			kBindAll,
+			Frame(0,0,207,175)		// Frame
+			kTrue, kTrue,
+			kEVELargeSpaceAfter|kEVEArrangeChildrenInColumn|kEVEChildAlignFill,
+			{	
+				// Preview Proxy
+				EVEOWLFlashPlayerWidget
+				(
+					kPageTransitionsPanelPreviewProxyWidgetID, 
+					kPMRsrcID_None,
+					kBindNone,
+					Frame(4,5,203,95)		// Frame
+					kTrue, kTrue,
+					kEVENoSpaceAfter
+				)
+				
+				// Transition
+				EVEGenericPanelWidget
+				(
+					kPageTransitionGroupWidgetID, kPMRsrcID_None,
+					kBindAll,
+					Frame(0,105,207,125)		// Frame
+					kTrue, kTrue,
+					kEVELargeSpaceAfter|kEVEArrangeChildrenInRow|kEVEChildAlignFill,
+					{	
+						EVEStaticTextWidget
+						(
+							kPageTransitionStaticTextWidgetID,	// WidgetId
+							kSysStaticTextPMRsrcId,				// RsrcId
+							kBindNone,							// Frame binding
+							Frame(0,0,70,20)					// Frame
+							kTrue,kTrue, kAlignRight,			// Visible, Enabled, Alignment
+							kDontEllipsize, kTrue,				// Ellipsize style, Convert ampersands
+							"kPageTransitionStaticText",		// Initial text
+							kPageTransitionDropDownWidgetID,			// Associated widget
+							kEVEAlignRight|kEVEExtraLargeSpaceAfter,    // EVE info
+						),
+						EVEDropDownListWidget
+						(
+							kPageTransitionDropDownWidgetID,	 // WidgetId
+							kSysDropDownPMRsrcId,				 // RsrcId
+							kBindNone,
+							Frame(72,0,204,20)					 // Frame
+							kTrue, kTrue,
+							{{
+		                        // Fill in dynamically
+							}}
+							kEVERegularSpaceAfter
+						),
+					}
+				)
+				
+				// Direction
+				EVEGenericPanelWidget
+				(
+					kPageDirectionGroupWidgetID, kPMRsrcID_None,
+					kBindAll,
+					Frame(0,130,207,150)		// Frame
+					kTrue, kTrue,
+					kEVELargeSpaceAfter|kEVEArrangeChildrenInRow|kEVEChildAlignFill,
+					{
+						EVEStaticTextWidget
+						(
+							kPageDirectionStaticTextWidgetID, // WidgetId
+							kSysStaticTextPMRsrcId,				// RsrcId
+							kBindNone,							// Frame binding
+							Frame(0,0,70,20)					// Frame
+							kTrue,kTrue, kAlignRight,			// Visible, Enabled, Alignment
+							kDontEllipsize, kTrue,				// Ellipsize style, Convert ampersands
+							"kPageDirectionStaticText",			// Initial text
+							kPageDirectionDropDownWidgetID,		// Associated widget
+							kEVEAlignRight|kEVEExtraLargeSpaceAfter,    // EVE info
+						),				
+						EVEDropDownListWidget
+						(
+							kPageDirectionDropDownWidgetID,    // WidgetId
+							kSysDropDownPMRsrcId,				// RsrcId
+							kBindNone,
+							Frame(72,0,204,20)					 // Frame
+							kTrue, kTrue,
+							{{
+		                        // Fill in dynamically
+							}}
+							kEVERegularSpaceAfter
+						),
+					}
+				)
+				
+				// Speed 
+				EVEGenericPanelWidget
+				(
+					kPageSpeedGroupWidgetID, kPMRsrcID_None,
+					kBindAll,
+					Frame(0,155,207,175)						// Frame
+					kTrue, kTrue,
+					kEVELargeSpaceAfter|kEVEArrangeChildrenInRow|kEVEChildAlignFill,
+					{
+						EVEStaticTextWidget
+						(
+							kPageSpeedStaticTextWidgetID,	// WidgetId
+							kSysStaticTextPMRsrcId,				// RsrcId
+							kBindNone,							// Frame binding
+							Frame(0,0,70,20)					// Frame
+							kTrue,kTrue, kAlignRight,			// Visible, Enabled, Alignment
+							kDontEllipsize, kTrue,				// Ellipsize style, Convert ampersands
+							"kPageSpeedStaticText",			// Initial text
+							kPageSpeedDropDownWidgetID,		// Associated widget
+							kEVEAlignRight|kEVEExtraLargeSpaceAfter,    // EVE info
+						),
+						EVEDropDownListWidget
+						(
+							kPageSpeedDropDownWidgetID,		// WidgetId
+							kSysDropDownPMRsrcId,			// RsrcId
+							kBindNone,
+							Frame(72,0,204,20)				// Frame
+							kTrue, kTrue,
+							{{
+		                        "kPTSlow",
+		                        "kPTMedium",
+		                        "kPTFast"
+							}}
+							kEVENoSpaceAfter
+						)
+					}
+				)			
+			}	
+		)
+		
+		SeparatorWidget
+        (
+            kPageTransitionsPanelSeparatorWidgetID,     // WidgetId
+            kPMRsrcID_None,								// RsrcId
+            kBindLeft|kBindRight,						// Frame binding
+            Frame(3,180,204,182)						// Frame
+            kTrue, kTrue,								// Visible, Enabled
+        ),
+
+		// ----- The control strip ----- //
+		EVEGenericPanelWidget
+		(
+			kPageTransitionsPanelControlStripWidgetID, kPMRsrcID_None,
+			kBindBottom | kBindLeft | kBindRight,
+			Frame(0,181,207,199)						// Frame
+			kTrue, kTrue,
+			kEVEArrangeChildrenInRow,
+			{	
+				ApplyToAllSpreadsButtonWidget
+				(
+					kApplyToAllSpreadsButtonWidgetID, 	// WidgetId
+					kPageTransitionsIconRsrcID, kDynamicDocumentsUIPluginID,	// RsrcId, 
+					kBindRight,
+					Frame(174,0,174 + kPanelIconWidth,kPanelIconHeight)				// Frame
+					kTrue, kTrue,						// Visible, Enabled
+					kADBEIconSuiteButtonType,
+				),
+			}
+		),
+	},
+	"kPageTransitionsPanelPopup",				// Panel popup menu name
+}
+
+#endif

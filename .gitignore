@@ -77,3 +77,12 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+external
+flexsamples
+docs
+devtools
+**/build/mac/*
+**/build/qa/*
+
+build/mac/

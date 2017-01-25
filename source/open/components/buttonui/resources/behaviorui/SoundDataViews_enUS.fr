@@ -1,0 +1,134 @@
+//========================================================================================
+//  
+//  $File: //depot/devtech/nevis/plugin/source/open/components/buttonui/resources/behaviorui/SoundDataViews_enUS.fr $
+//  
+//  Owner: Mark VerMurlen
+//  
+//  $Author: gmatthew $
+//  
+//  $DateTime: 2013/06/18 15:15:50 $
+//  
+//  $Revision: #1 $
+//  
+//  $Change: 853167 $
+//  
+//  Copyright 1997-2010 Adobe Systems Incorporated. All rights reserved.
+//  
+//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
+//  with the terms of the Adobe license agreement accompanying it.  If you have received
+//  this file from a source other than Adobe, then your use, modification, or 
+//  distribution of it requires the prior written permission of Adobe.
+//  
+//========================================================================================
+
+#ifdef __ODFRC__
+#include "InterfaceColorDefines.h"
+
+//========================================================================================
+// AlignPanelView resource
+//========================================================================================
+
+resource SoundDataPanel (kSoundPanelRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kSoundPanelWidgetID, kPMRsrcID_None, // WidgetId, RsrcId
+	kBindNone,					// Frame binding
+	Frame(0, 0, kButtonPanelMinWidth-14, 50)		// Frame
+	kTrue, kTrue,				// Visible, Enabled
+	kTrue,						// EraseBeforeDraw
+	kInterfacePaletteFill,		// Erase to color
+	kFalse,						// DrawDropShadow
+	"",				// Panel name	
+	{
+		EVEGenericPanelWidget
+		(
+			kInvalidWidgetID,	// WidgetId
+			0,0,				// RsrcId
+			kBindNone,						// Frame binding
+			Frame(0, 0, kButtonPanelMinWidth-14, 50)		// Frame
+			kTrue,							// Visible
+			kTrue,							// Enabled
+			kEVENoSpaceAfter|kEVEArrangeChildrenInRow|kEVEAlignLeft|kEVENoMargin,		//EVE info
+			{
+				EVEGenericPanelWidget
+				(
+					kInvalidWidgetID,	// WidgetId
+					0,0,				// RsrcId
+					kBindNone,						// Frame binding
+					Frame(0, 0, kButtonStaticWidgetsWidth, 45)		// Frame
+					kTrue,							// Visible
+					kTrue,							// Enabled
+					kEVERegularSpaceAfter|kEVEArrangeChildrenInColumn|kEVEAlignRight|kEVEChildRegularSpaceAfter,		//EVE info
+					{
+						EVEStaticTextWidget
+						(
+							kSoundLabelWidgetID, kSysStaticTextPMRsrcId,					// WidgetId, RsrcId
+							kBindNone,											// Frame binding
+							Frame(5, 5, kButtonStaticWidgetsWidth,22)		// Frame
+							kTrue, kTrue, kAlignRight,							// Visible, Enabled, Alignment
+							kDontEllipsize,	kTrue,									// Ellipsize style, Convert ampersands
+							"$$$/Dialog/Behaviors/Sound/Sound:",
+							kSoundWidgetID,
+							kEVERegularSpaceAfter
+						),
+						EVEStaticTextWidget
+						(
+							kOperationLabelWidgetID, kSysStaticTextPMRsrcId,					// WidgetId, RsrcId
+							kBindNone,											// Frame binding
+							Frame(5, 25, kButtonStaticWidgetsWidth,42)		// Frame
+							kTrue, kTrue, kAlignRight,							// Visible, Enabled, Alignment
+							kDontEllipsize,	kTrue,									// Ellipsize style, Convert ampersands
+							"$$$/Dialog/Behaviors/Sound/Play Options:",
+							kOperationWidgetID,
+							kEVERegularSpaceAfter
+						),
+					}
+				)
+						
+				EVEGenericPanelWidget
+				(
+					kInvalidWidgetID,	// WidgetId
+					0,0,				// RsrcId
+					kBindNone,						// Frame binding
+					Frame(kButtonStaticWidgetsWidth+5, 0, kButtonPanelMinWidth-15, 45)		// Frame
+					kTrue,							// Visible
+					kTrue,							// Enabled
+					kEVENoSpaceAfter|kEVEArrangeChildrenInColumn|kEVEAlignLeft|kEVEChildRegularSpaceAfter,		//EVE info
+					{
+						EVEGenericPanelWidget
+						(
+							kInvalidWidgetID,	// WidgetId
+							0,0,				// RsrcId
+							kBindNone,						// Frame binding
+							Frame(0, 5, kActionChoiceWidgetsWidth,22)		// Frame
+							kTrue,							// Visible
+							kTrue,							// Enabled
+							kEVEDontArrangeChildren|kEVERegularSpaceAfter,		//EVE info
+							{
+								SoundChoice
+								(
+									kSoundWidgetID, kSysDropDownPMRsrcId, kBindNone,
+									Frame(0, 0, kActionChoiceWidgetsWidth,17)		// Frame
+									kTrue, kTrue,
+									{{
+									}}
+								),
+							}
+						)
+						SoundOpChoice
+						(
+							kOperationWidgetID, kSysDropDownPMRsrcId, kBindNone,
+							Frame(0, 25, kActionChoiceWidgetsWidth,42)		// Frame
+							kTrue, kTrue,
+							{{
+							}}
+						),
+					}
+				)
+			}
+		)
+	},
+	kSoundBehavior
+}
+
+#endif
