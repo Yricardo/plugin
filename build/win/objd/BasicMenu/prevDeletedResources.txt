@@ -1,0 +1,12 @@
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\timestamp.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_ACTD\400.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_CLST\500.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_CRCT\1.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_FACT\550.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_LOCR\300.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_LOCR\350.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_MENR\200.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_PMST\301.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_PMST\305.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_PMST\351.idrc
+Fichier supprimé - D:\workspace\plugin\build\win\Debug\SDK\(BasicMenu.sdk Resources)\idrc_PVER\450.idrc

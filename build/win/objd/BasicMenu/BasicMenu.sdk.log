@@ -1,0 +1,21 @@
+﻿  VCPlugInHeaders.cpp
+  BscMnuActionComponent.cpp
+  BscMnuSuiteASB.cpp
+  BscMnuSuiteLayoutCSB.cpp
+  BscMnuID.cpp
+  BscMnuNoStrip.cpp
+  PlugInStatics.cpp
+  SDKPlugInEntrypoint.cpp
+  TriggerResourceDeps.cpp
+  Performing Custom Build Tools
+  ODFRC deleting old resources... 
+  merge_res.cmd - calling ConcatRes
+          1 fichier(s) copié(s).
+  ConcatRes skipped since ".\..\objD\BasicMenu"\BscMnu.fres is an empty file.
+  merge_res.cmd done.
+  Deleting old resources... 
+  12 fichier(s) copi�(s)
+     Création de la bibliothèque ..\..\..\build\win\objD\BasicMenu/BasicMenu.lib et de l'objet ..\..\..\build\win\objD\BasicMenu/BasicMenu.exp
+  BasicMenu.sdk.vcxproj -> D:\workspace\plugin\build\win\prj\..\Debug\SDK\BasicMenu.sdk.pln
+          1 fichier(s) copié(s).
+  restore_res.cmd done.
