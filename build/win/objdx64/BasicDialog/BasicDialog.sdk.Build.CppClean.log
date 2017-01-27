@@ -6,11 +6,11 @@ d:\workspace\plugin\build\win\objdx64\basicdialog\vcpluginheaders.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgactioncomponent.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgentrypoint.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgdialogobserver.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgnostrip.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgid.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\pluginstatics.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgdialogcontroller.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgnostrip.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\triggerresourcedeps.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgdialogcontroller.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgid.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlg.fres
 d:\workspace\plugin\build\win\debugx64\sdk\basicdialog.sdk.pln
 d:\workspace\plugin\build\win\debugx64\sdk\basicdialog.pdb
