@@ -40,7 +40,7 @@ resource StringTable (kSDKDefStringsResourceID + index_enUS)
 	{
 
 		// ----- Menu strings
-		kBscDlgCompanyKey,					 "Demain un autre jour",					
+		kBscDlgCompanyKey,					 kBscDlgCompanyValue,					
 		kBscDlgAboutMenuKey,				 "about testdialog",
 		kBscDlgPluginsMenuKey,				 "testdialog",
 

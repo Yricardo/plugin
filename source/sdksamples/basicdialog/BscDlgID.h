@@ -70,6 +70,7 @@ DECLARE_PMID(kActionIDSpace, kBscDlgDialog2ActionID, kBscDlgPrefix + 2)
 DECLARE_PMID(kWidgetIDSpace, kBscDlgDialogWidgetID, kBscDlgPrefix + 0)
 DECLARE_PMID(kWidgetIDSpace, kBscDlgIconSuiteWidgetID, kBscDlgPrefix + 1)
 DECLARE_PMID(kWidgetIDSpace, kBscDlgDropDownListWidgetID, kBscDlgPrefix + 2)
+DECLARE_PMID(kWidgetIDSpace, kBscDlgTextEditBoxWidgetID, kBscDlgPrefix + 3) //TextEditBox 
 END_IDS()
 
 // "About Plug-ins" sub-menu:

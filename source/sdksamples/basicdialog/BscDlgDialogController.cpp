@@ -28,7 +28,9 @@
 // General includes:
 #include "CDialogController.h"
 #include "SystemUtils.h"
-
+#include "ISelectionManager.h" 
+#include "ITextEditSuite.h"
+#include "IActiveContext.h" 
 // Project includes:
 #include "BscDlgID.h"
 
@@ -109,9 +111,23 @@ WidgetID BscDlgDialogController::ValidateDialogFields( IActiveContext* myContext
 */
 void BscDlgDialogController::ApplyDialogFields( IActiveContext* myContext, const WidgetID& widgetId) 
 {
-	#pragma unused(myContext,widgetId)
-	// Replace with code that gathers widget values and applies them.
-	SystemBeep();  
+	
+	PMString editBoxString = this->GetTextControlData(kBscDlgTextEditBoxWidgetID);
+	PMString dropDownListSelection = this->GetTextControlData(kBscDlgDropDownListWidgetID);
+	dropDownListSelection.Translate();
+	PMString resultString = editBoxString;
+	resultString.Append('\t');
+	resultString.Append(dropDownListSelection);
+	resultString.Append('\r');
+	InterfacePtr<ITextEditSuite> textEditSuite(myContext->GetContextSelection(), IID_ITEXTEDIT_ISUITE);
+	if (textEditSuite && textEditSuite->CanEditText()) {
+		ErrorCode status = textEditSuite->InsertText(WideString(resultString));
+		ASSERT_MSG(status == kSuccess, "WFPDialogController::ApplyFields: can't insert text");
+	}
+	else {
+
+	}
+
 }
 
 // End, BscDlgDialogController.cpp.

@@ -376,6 +376,25 @@ __FILE__, __LINE__,
 					}} 
 				), 
 
+				// TextEditBox Widget resource 
+				TextEditBoxWidget ( 
+					kBscDlgTextEditBoxWidgetID, // WidgetId 
+					kSysEditBoxPMRsrcId, // RsrcId 
+					kBindNone, // Frame binding 
+					Frame(200, 16, 250, 36), // Frame (l,t,r,b) 
+					kTrue, kTrue // Visible, Enabled 
+					0, // Widget id of nudge button (0 so we don't get one) 
+					0, 0,// small, large nudge amount 
+					0, // max num chars(0 = no limit) 
+					kFalse,// is read only 
+					kFalse,// should notify each key stroke 
+					kFalse,// range checking enabled 
+					kFalse,// blank entry allowed 
+					0, // Upper bounds 
+					0, // Lower bounds 
+					"DAJdefault", // Initial text 
+				),
+
 			}  // End of EVE Generic panel child widgets
 		), // End of EVE Generic panel widget definition
 
