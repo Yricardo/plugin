@@ -18,7 +18,7 @@
 //  with the terms of the Adobe license agreement accompanying it.  If you have received
 //  this file from a source other than Adobe, then your use, modification, or 
 //  distribution of it requires the prior written permission of Adobe.
-//  
+// 
 //  
 //  Each C++ implementation class in the plug-in and its corresponding ImplementationID
 //  should be registered in this file.

@@ -64,10 +64,12 @@ DECLARE_PMID(kImplementationIDSpace, kBscDlgDialogObserverImpl, kBscDlgPrefix + 
 // ActionIDs:
 DECLARE_PMID(kActionIDSpace, kBscDlgAboutActionID, kBscDlgPrefix + 0)
 DECLARE_PMID(kActionIDSpace, kBscDlgDialogActionID, kBscDlgPrefix + 1)
+DECLARE_PMID(kActionIDSpace, kBscDlgDialog2ActionID, kBscDlgPrefix + 2)
 
 // WidgetIDs:
 DECLARE_PMID(kWidgetIDSpace, kBscDlgDialogWidgetID, kBscDlgPrefix + 0)
 DECLARE_PMID(kWidgetIDSpace, kBscDlgIconSuiteWidgetID, kBscDlgPrefix + 1)
+DECLARE_PMID(kWidgetIDSpace, kBscDlgDropDownListWidgetID, kBscDlgPrefix + 2)
 END_IDS()
 
 // "About Plug-ins" sub-menu:
@@ -80,13 +82,21 @@ END_IDS()
 
 // "Plug-ins" sub-menu item keys:
 #define kBscDlgDialogMenuItemKey		kBscDlgStringPrefix "kBscDlgDialogMenuItemKey"
+#define kBscDlgDialog2MenuItemKey		kBscDlgStringPrefix "kBscDlgDialogMenu2ItemKey"
 
 // "Plug-ins" sub-menu item positions:
 #define kBscDlgDialogMenuItemPosition	1.0
+#define kBscDlgDialog2MenuItemPosition	2.0
 
 // Other StringKeys:
 #define kBscDlgDialogTitleKey			kBscDlgStringPrefix "kBscDlgDialogTitleKey"
+#define kBscDlgDialog2TitleKey			kBscDlgStringPrefix "kBscDlgDialog2TitleKey"
 #define kBscDlgAboutBoxStringKey		kBscDlgStringPrefix "kBscDlgAboutBoxStringKey"
+
+#define kBscDlgDownItem_1Key kBscDlgStringPrefix "kBscDlgDropDownItem_1Key" 
+#define kBscDlgDownItem_2Key kBscDlgStringPrefix "kBscDlgDropDownItem_2Key" 
+#define kBscDlgDropDownItem_3Key kBscDlgStringPrefix "kBscDlgDropDownItem_3Key" 
+#define kBscDlgDropDownItem_4Key kBscDlgStringPrefix "kBscDlgDropDownItem_4Key" 
 
 // Initial data format version numbers
 #define kBscDlgFirstMajorFormatNumber  kSDKDef_30_PersistMajorVersionNumber

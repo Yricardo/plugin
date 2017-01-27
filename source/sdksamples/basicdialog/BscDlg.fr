@@ -156,6 +156,11 @@ resource MenuDef (kSDKDefMenuResourceID)
 		kBscDlgPluginsMenuPath,
 		kBscDlgDialogMenuItemPosition,
 		kSDKDefIsNotDynamicMenuFlag,
+
+		kBscDlgDialog2ActionID,
+		kBscDlgPluginsMenuPath,
+		kBscDlgDialog2MenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
 		
 	}
 };
@@ -180,6 +185,15 @@ resource ActionDef (kSDKDefActionResourceID)
 		kBscDlgDialogMenuItemKey,		
 		kOtherActionArea,			
 		kNormalAction,				
+		kDisableIfLowMem,	
+		kInvalidInterfaceID,		
+		kSDKDefInvisibleInKBSCEditorFlag,
+
+		kBscDlgActionComponentBoss,
+		kBscDlgDialog2ActionID,
+		kBscDlgDialog2MenuItemKey,
+		kOtherActionArea,
+		kNormalAction,
 		kDisableIfLowMem,	
 		kInvalidInterfaceID,		
 		kSDKDefInvisibleInKBSCEditorFlag,
@@ -222,7 +236,11 @@ resource StringTable (kSDKDefStringsNoTransResourceID + index_enUS)
 	kEuropeanMacToWinEncodingConverter,		// Character encoding converter
 	{
 		// No-Translate strings go here:		
-		
+		// Drop-down list item strings 
+		kBscDlgDownItem_1Key, "loreum", 
+		kBscDlgDownItem_2Key, "ipsum",
+		kBscDlgDropDownItem_3Key, "alea",
+	    kBscDlgDropDownItem_4Key, "jacta es",
 		
 	}
 };
@@ -257,7 +275,7 @@ type BscDlgDialogBoss(kViewRsrcType) : DialogBoss(ClassID = kBscDlgDialogBoss)
 
 resource BscDlgDialogBoss (kSDKDefDialogResourceID + index_enUS)
 {
-	__FILE__, __LINE__,
+__FILE__, __LINE__,
 	kBscDlgDialogWidgetID,	// WidgetID
 	kPMRsrcID_None,				// RsrcID
 	kBindNone,					// Binding
@@ -343,6 +361,21 @@ resource BscDlgDialogBoss (kSDKDefDialogResourceID + index_enUS)
 					
 					kEVELargeSpaceAfter,
 				),
+
+				DropDownListWidget ( 
+					kBscDlgDropDownListWidgetID, // WidgetId 
+					kSysDropDownPMRsrcId, // RsrcId 
+					kBindNone, // Frame binding 
+					Frame(10,16,140,36), // Frame (l,t,r,b) 
+					kTrue, kTrue, // Visible, Enabled 
+					{{ // List Items 
+						kBscDlgDownItem_1Key, 
+						kBscDlgDownItem_2Key, 
+						kBscDlgDropDownItem_3Key, 
+						kBscDlgDropDownItem_4Key, 
+					}} 
+				), 
+
 			}  // End of EVE Generic panel child widgets
 		), // End of EVE Generic panel widget definition
 

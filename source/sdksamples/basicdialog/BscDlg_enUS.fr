@@ -40,12 +40,12 @@ resource StringTable (kSDKDefStringsResourceID + index_enUS)
 	{
 
 		// ----- Menu strings
-		kBscDlgCompanyKey,					kBscDlgCompanyValue,					
-		kBscDlgAboutMenuKey,				kBscDlgPluginName "[US]...",
-		kBscDlgPluginsMenuKey,				kBscDlgPluginName "[US]",
+		kBscDlgCompanyKey,					 "Demain un autre jour",					
+		kBscDlgAboutMenuKey,				 "about testdialog",
+		kBscDlgPluginsMenuKey,				 "testdialog",
 
-		kBscDlgDialogMenuItemKey,			kBscDlgPluginName "[US]...",
-	
+		kBscDlgDialogMenuItemKey,			"TestDialog",
+		kBscDlgDialog2MenuItemKey,			"Tata",
 		// ----- Command strings
 
 		
@@ -54,12 +54,11 @@ resource StringTable (kSDKDefStringsResourceID + index_enUS)
 		
 		// ----- Panel/dialog strings
 		kBscDlgDialogTitleKey,     kBscDlgPluginName "[US]",
-
 		// ----- Error strings
 
 			
 		// ----- Misc strings
-		kBscDlgAboutBoxStringKey,			kBscDlgPluginName "[US], version " kBscDlgVersion " by " kBscDlgAuthor "\n\n" kSDKDefCopyrightStandardValue "\n\n" kSDKDefPartnersStandardValue_enUS,
+		kBscDlgAboutBoxStringKey,			"plugin de test de yoann RICARD pour demain un autre jour"
 	}
 
 };
