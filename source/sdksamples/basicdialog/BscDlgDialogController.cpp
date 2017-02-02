@@ -31,8 +31,20 @@
 #include "ISelectionManager.h" 
 #include "ITextEditSuite.h"
 #include "IActiveContext.h" 
+#include "IApplication.h"
 // Project includes:
 #include "BscDlgID.h"
+#include "ISession.h"
+#include "ILayoutUIUtils.h"
+#include "ITextFrameFacade.h"
+#include "IDocument.h"
+#include "IDocumentList.h"
+#include "IApplication.h"
+#include "Utils.h"
+#include "IDataBase.h"
+#include "CAlert.h"
+#include <stdlib.h>
+#include <string> 
 
 /** Implements IDialogController based on the partial implementation CDialogController; 
 	its methods allow for the initialization, validation, and application of dialog widget values.
@@ -109,9 +121,9 @@ WidgetID BscDlgDialogController::ValidateDialogFields( IActiveContext* myContext
 
 /* ApplyFields
 */
-void BscDlgDialogController::ApplyDialogFields( IActiveContext* myContext, const WidgetID& widgetId) 
+void BscDlgDialogController::ApplyDialogFields(IActiveContext* myContext, const WidgetID& widgetId)
 {
-	
+	//prepare string
 	PMString editBoxString = this->GetTextControlData(kBscDlgTextEditBoxWidgetID);
 	PMString dropDownListSelection = this->GetTextControlData(kBscDlgDropDownListWidgetID);
 	dropDownListSelection.Translate();
@@ -119,18 +131,78 @@ void BscDlgDialogController::ApplyDialogFields( IActiveContext* myContext, const
 	resultString.Append('\t');
 	resultString.Append(dropDownListSelection);
 	resultString.Append('\r');
+
+	//je declare TextEditInterfacePtr
 	InterfacePtr<ITextEditSuite> textEditSuite(myContext->GetContextSelection(), IID_ITEXTEDIT_ISUITE);
-	if (textEditSuite && textEditSuite->CanEditText()) {
+	//declare IApplicationInterfacePtr
+	InterfacePtr<IApplication> app(GetExecutionContextSession()->QueryApplication());
+	//declare IDocumentListInterfacePtr
+	InterfacePtr<IDocumentList> oDocumentList(app->QueryDocumentList());
+
+	if (textEditSuite && textEditSuite->CanEditText()) { //si un document est ouvert et une boite de texte aussi (on peut donc écrire)
 		ErrorCode status = textEditSuite->InsertText(WideString(resultString));
 		ASSERT_MSG(status == kSuccess, "WFPDialogController::ApplyFields: can't insert text");
+		return;
 	}
-	else {
+
+	if (oDocumentList->GetDocCount() > 0) {//si y'a un doc ouvert sur InDesign
+
+
+		//debug
+		/* PMString string1("nb docs : ");
+		char buffer[3];
+		itoa(int(oDocumentList->GetDocCount()), buffer, 10);//convert int32 to char[]
+		PMString string2(buffer);//string to PMstring
+		string1.Append('\t');
+		string1.Append(string2);
+		string1.Append('\r');
+		CAlert::InformationAlert(string1);//debug */
+
+		//iDocument *iDoc = Utils<ILayoutUIUtils>()->GetFrontDocument();
+
+
+		//if(iDoc) {//à ce stade là, si la condition passe, on sait qu'il y a des documents ouverts dont un actif, il manque donc la zone de texte.
+
+			//Utils<Facade::ITextFrameFacade>()->CreateTextFrame();//on crée donc la zone de texte
+		
+			/* CreateTextFrame(UIDRef parent, UIDRef &newFrame, const PMRect &boundary, bool16 noGraphicAttr, bool16 isHorizontal, bool16 isFrameGrid, bool16 isLeftToRight, ClassID frameItem = kFrameItemBoss) = 0 */
+
+			//et on écrit
+			//ErrorCode status = textEditSuite->InsertText(WideString(resultString));
+			//return;
+
+		//}
+
+		//autrement il y a des documents ouvert mais pas de documents actif...
+		//on rend le premier doc actif
+		//myContext::ChangeContextDocument(oDocumentList->GetNthDoc(0));
+		//on crée une text frame
+		//Utils<Facade::ITextFrameFacade>()->CreateTextFrame;
+		//on écrit
+		//ErrorCode status = textEditSuite->InsertText(WideString(resultString));
+	
+		//return;
 
 	}
+		
+	//sinon on créé un document
 
 }
 
+
+
+/*Facade::ITextFrameFacade::CreateTextFrame(UIDRef 	parent,
+	UIDRef & 	newFrame,
+	const PMRect & 	boundary,
+	bool16 	noGraphicAttr,
+	bool16 	isHorizontal,
+	bool16 	isFrameGrid,
+	bool16 	isLeftToRight,
+	ClassID 	frameItem = kFrameItemBoss
+	)*/
 // End, BscDlgDialogController.cpp.
 
-
+/*UIDRef::UIDRef(IDataBase * 	db,
+	UID 	id
+	)*/
 

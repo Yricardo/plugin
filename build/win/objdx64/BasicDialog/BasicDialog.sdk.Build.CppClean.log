@@ -1,12 +1,12 @@
 d:\workspace\plugin\build\win\objdx64\basicdialog\basicdialog.pch
 d:\workspace\plugin\build\win\objdx64\basicdialog\vc120.pdb
 d:\workspace\plugin\build\win\objdx64\basicdialog\vcpluginheaders.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgid.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\pluginstatics.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgdialogobserver.obj
-d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgactioncomponent.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgentrypoint.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\pluginstatics.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgnostrip.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgactioncomponent.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgdialogobserver.obj
+d:\workspace\plugin\build\win\objdx64\basicdialog\bscdlgid.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\triggerresourcedeps.obj
 d:\workspace\plugin\build\win\objdx64\basicdialog\basicdialog.tlog\cl.command.1.tlog
 d:\workspace\plugin\build\win\objdx64\basicdialog\basicdialog.tlog\cl.read.1.tlog
